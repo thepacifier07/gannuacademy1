@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My MCQ Portal</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; background: #f4f4f9; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        select, button { padding: 10px; margin: 5px 0; width: 100%; border-radius: 5px; border: 1px solid #ddd; }
+        .option-btn { background: #e7e7e7; cursor: pointer; text-align: left; transition: 0.2s; }
+        .option-btn:hover { background: #d0d0d0; }
+        .correct { background: #d4edda !important; border-color: #c3e6cb; }
+        .wrong { background: #f8d7da !important; border-color: #f5c6cb; }
+    </style>
+</head>
+<body>
+
+    <h1>📚 MCQ Library</h1>
+    
+    <div class="card">
+        <label>Select Class:</label>
+        <select id="classSelect" onchange="updateSubjects()"><option>--Choose--</option></select>
+        
+        <label>Select Subject:</label>
+        <select id="subjectSelect" onchange="updateChapters()"><option>--Choose--</option></select>
+        
+        <label>Select Chapter:</label>
+        <select id="chapterSelect" onchange="loadQuestions()"><option>--Choose--</option></select>
+    </div>
+
+    <div id="quizContainer"></div>
+
+    <script>
+        let quizData = {};
+
+        // 1. Fetch the JSON data
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => {
+                quizData = data;
+                const classSelect = document.getElementById('classSelect');
+                Object.keys(data).forEach(c => {
+                    classSelect.innerHTML += `<option value="${c}">${c}</option>`;
+                });
+            });
+
+        function updateSubjects() {
+            const cls = document.getElementById('classSelect').value;
+            const subSelect = document.getElementById('subjectSelect');
+            subSelect.innerHTML = '<option>--Choose--</option>';
+            if(quizData[cls]) {
+                Object.keys(quizData[cls]).forEach(s => {
+                    subSelect.innerHTML += `<option value="${s}">${s}</option>`;
+                });
+            }
+        }
+
+        function updateChapters() {
+            const cls = document.getElementById('classSelect').value;
+            const sub = document.getElementById('subjectSelect').value;
+            const chapSelect = document.getElementById('chapterSelect');
+            chapSelect.innerHTML = '<option>--Choose--</option>';
+            if(quizData[cls][sub]) {
+                Object.keys(quizData[cls][sub]).forEach(ch => {
+                    chapSelect.innerHTML += `<option value="${ch}">${ch}</option>`;
+                });
+            }
+        }
+
+        function loadQuestions() {
+            const cls = document.getElementById('classSelect').value;
+            const sub = document.getElementById('subjectSelect').value;
+            const ch = document.getElementById('chapterSelect').value;
+            const container = document.getElementById('quizContainer');
+            container.innerHTML = '';
+
+            const questions = quizData[cls][sub][ch];
+            questions.forEach((q, qIdx) => {
+                let html = `<div class="card"><h3>${q.question}</h3>`;
+                q.options.forEach((opt, oIdx) => {
+                    html += `<button class="option-btn" onclick="checkAns(this, ${oIdx}, ${q.answer})">${opt}</button><br>`;
+                });
+                html += `</div>`;
+                container.innerHTML += html;
+            });
+        }
+
+        function checkAns(btn, selected, correct) {
+            if(selected === correct) btn.classList.add('correct');
+            else btn.classList.add('wrong');
+        }
+    </script>
+</body>
+</html>
