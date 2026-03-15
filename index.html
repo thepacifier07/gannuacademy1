@@ -2,30 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My MCQ Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GANNU ACADEMY - MCQ Portal</title>
     <style>
-        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; background: #f4f4f9; }
-        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        select, button { padding: 10px; margin: 5px 0; width: 100%; border-radius: 5px; border: 1px solid #ddd; }
-        .option-btn { background: #e7e7e7; cursor: pointer; text-align: left; transition: 0.2s; }
-        .option-btn:hover { background: #d0d0d0; }
-        .correct { background: #d4edda !important; border-color: #c3e6cb; }
-        .wrong { background: #f8d7da !important; border-color: #f5c6cb; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #fdf6e3; /* Light, warm background */
+            color: #333;
+        }
+
+        /* Header Styles with Ganesh and Title */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #ff9f43; /* Orange accent */
+            padding-bottom: 20px;
+        }
+
+        #ganesh-container {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        /* The Animated Ganesh ji */
+        #ganesh-ji {
+            width: 100%;
+            height: auto;
+            /* Using an SVG or high-quality transparent PNG is best here */
+            animation: gentle-wobble 3s ease-in-out infinite;
+        }
+
+        @keyframes gentle-wobble {
+            0%, 100% { transform: translateY(0) rotate(-2deg); }
+            50% { transform: translateY(-10px) rotate(2deg); }
+        }
+
+        h1.site-title {
+            color: #d35400; /* Deep orange */
+            font-size: 3.5em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+            border: 1px solid #eee;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+            display: block;
+            margin-bottom: 5px;
+            margin-top: 15px;
+        }
+
+        select, button.main-btn {
+            padding: 12px;
+            margin: 5px 0;
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 1em;
+            box-sizing: border-box; /* Crucial for padding */
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #ff9f43;
+            box-shadow: 0 0 5px rgba(255,159,67,0.5);
+        }
+
+        /* MCQ Option Buttons */
+        .option-btn {
+            background: #f8f9fa;
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.2s ease;
+            margin-bottom: 10px;
+            border: 1px solid #e1e8ed;
+            padding: 15px;
+            width: 100%;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+
+        .option-btn:hover {
+            background: #e2e6ea;
+            border-color: #adb5bd;
+            transform: translateY(-2px);
+        }
+
+        .correct {
+            background-color: #d4edda !important;
+            border-color: #c3e6cb !important;
+            color: #155724;
+            font-weight: bold;
+        }
+
+        .wrong {
+            background-color: #f8d7da !important;
+            border-color: #f5c6cb !important;
+            color: #721c24;
+        }
+
+        #quizContainer h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
     </style>
 </head>
 <body>
 
-    <h1>📚 MCQ Library</h1>
+    <div class="header-container">
+        <div id="ganesh-container">
+            <img src="ganesh_with_glasses.svg" alt="Cute Ganesh ji with glasses" id="ganesh-ji">
+        </div>
+        <h1 class="site-title">GANNU ACADEMY</h1>
+    </div>
     
     <div class="card">
-        <label>Select Class:</label>
-        <select id="classSelect" onchange="updateSubjects()"><option>--Choose--</option></select>
+        <label for="classSelect">Select Class:</label>
+        <select id="classSelect" onchange="updateSubjects()">
+            <option>--Choose--</option>
+        </select>
         
-        <label>Select Subject:</label>
-        <select id="subjectSelect" onchange="updateChapters()"><option>--Choose--</option></select>
+        <label for="subjectSelect">Select Subject:</label>
+        <select id="subjectSelect" onchange="updateChapters()">
+            <option>--Choose--</option>
+        </select>
         
-        <label>Select Chapter:</label>
-        <select id="chapterSelect" onchange="loadQuestions()"><option>--Choose--</option></select>
+        <label for="chapterSelect">Select Chapter:</label>
+        <select id="chapterSelect" onchange="loadQuestions()">
+            <option>--Choose--</option>
+        </select>
     </div>
 
     <div id="quizContainer"></div>
@@ -33,24 +157,41 @@
     <script>
         let quizData = {};
 
-        // 1. Fetch the JSON data
+        // 1. Fetch the JSON data (ensure 'data.json' exists in the same folder)
         fetch('data.json')
             .then(res => res.json())
             .then(data => {
                 quizData = data;
                 const classSelect = document.getElementById('classSelect');
                 Object.keys(data).forEach(c => {
-                    classSelect.innerHTML += `<option value="${c}">${c}</option>`;
+                    const option = document.createElement('option');
+                    option.value = c;
+                    option.textContent = c;
+                    classSelect.appendChild(option);
                 });
+            })
+            .catch(err => {
+                console.error("Error loading quiz data:", err);
+                document.getElementById('quizContainer').innerHTML = "<p>Error loading questions. Make sure 'data.json' is present.</p>";
             });
 
         function updateSubjects() {
             const cls = document.getElementById('classSelect').value;
             const subSelect = document.getElementById('subjectSelect');
+            const chapSelect = document.getElementById('chapterSelect');
+            const container = document.getElementById('quizContainer');
+
+            // Reset dependent dropdowns and container
             subSelect.innerHTML = '<option>--Choose--</option>';
-            if(quizData[cls]) {
+            chapSelect.innerHTML = '<option>--Choose--</option>';
+            container.innerHTML = '';
+
+            if (quizData[cls]) {
                 Object.keys(quizData[cls]).forEach(s => {
-                    subSelect.innerHTML += `<option value="${s}">${s}</option>`;
+                    const option = document.createElement('option');
+                    option.value = s;
+                    option.textContent = s;
+                    subSelect.appendChild(option);
                 });
             }
         }
@@ -59,10 +200,18 @@
             const cls = document.getElementById('classSelect').value;
             const sub = document.getElementById('subjectSelect').value;
             const chapSelect = document.getElementById('chapterSelect');
+            const container = document.getElementById('quizContainer');
+
+            // Reset dependent dropdown and container
             chapSelect.innerHTML = '<option>--Choose--</option>';
-            if(quizData[cls][sub]) {
+            container.innerHTML = '';
+
+            if (quizData[cls] && quizData[cls][sub]) {
                 Object.keys(quizData[cls][sub]).forEach(ch => {
-                    chapSelect.innerHTML += `<option value="${ch}">${ch}</option>`;
+                    const option = document.createElement('option');
+                    option.value = ch;
+                    option.textContent = ch;
+                    chapSelect.appendChild(option);
                 });
             }
         }
@@ -72,22 +221,58 @@
             const sub = document.getElementById('subjectSelect').value;
             const ch = document.getElementById('chapterSelect').value;
             const container = document.getElementById('quizContainer');
-            container.innerHTML = '';
+            container.innerHTML = ''; // Clear previous questions
 
-            const questions = quizData[cls][sub][ch];
-            questions.forEach((q, qIdx) => {
-                let html = `<div class="card"><h3>${q.question}</h3>`;
-                q.options.forEach((opt, oIdx) => {
-                    html += `<button class="option-btn" onclick="checkAns(this, ${oIdx}, ${q.answer})">${opt}</button><br>`;
+            if (quizData[cls] && quizData[cls][sub] && quizData[cls][sub][ch]) {
+                const questions = quizData[cls][sub][ch];
+                
+                if (questions.length === 0) {
+                    container.innerHTML = "<p>No questions available for this chapter.</p>";
+                    return;
+                }
+
+                questions.forEach((q, qIdx) => {
+                    const questionCard = document.createElement('div');
+                    questionCard.className = 'card';
+                    
+                    const questionTitle = document.createElement('h3');
+                    questionTitle.textContent = `Q${qIdx + 1}: ${q.question}`;
+                    questionCard.appendChild(questionTitle);
+
+                    const optionsContainer = document.createElement('div');
+
+                    q.options.forEach((opt, oIdx) => {
+                        const optionBtn = document.createElement('button');
+                        optionBtn.className = 'option-btn';
+                        optionBtn.textContent = opt;
+                        // Use a unique name for each question's option group for logic
+                        optionBtn.onclick = function() { checkAns(this, oIdx, q.answer, optionsContainer); };
+                        optionsContainer.appendChild(optionBtn);
+                    });
+                    
+                    questionCard.appendChild(optionsContainer);
+                    container.appendChild(questionCard);
                 });
-                html += `</div>`;
-                container.innerHTML += html;
-            });
+            }
         }
 
-        function checkAns(btn, selected, correct) {
-            if(selected === correct) btn.classList.add('correct');
-            else btn.classList.add('wrong');
+        function checkAns(selectedBtn, selectedIdx, correctIdx, optionsContainer) {
+            // Find all option buttons in this question's container
+            const allOptions = optionsContainer.querySelectorAll('.option-btn');
+            
+            // Remove existing correct/wrong classes in this group
+            allOptions.forEach(btn => {
+                btn.classList.remove('correct', 'wrong');
+            });
+
+            // Highlight the selected button based on correctness
+            if (selectedIdx === correctIdx) {
+                selectedBtn.classList.add('correct');
+            } else {
+                selectedBtn.classList.add('wrong');
+                // Optional: Also highlight the correct answer
+                // allOptions[correctIdx].classList.add('correct');
+            }
         }
     </script>
 </body>
