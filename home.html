@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GANNU ACADEMY - Home</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #fdf6e3;
+            color: #333;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #ff9f43;
+            padding-bottom: 20px;
+        }
+
+        #ganesh-container {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        #ganesh-ji {
+            width: 100%;
+            height: auto;
+            animation: gentle-wobble 3s ease-in-out infinite;
+        }
+
+        @keyframes gentle-wobble {
+            0%, 100% { transform: translateY(0) rotate(-2deg); }
+            50% { transform: translateY(-10px) rotate(2deg); }
+        }
+
+        h1.site-title {
+            color: #d35400;
+            font-size: 3.5em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-menu {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .nav-menu a {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 12px 25px;
+            background-color: #ff9f43;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            background-color: #d35400;
+            transform: translateY(-2px);
+        }
+
+        .nav-menu a.active {
+            background-color: #d35400;
+            border: 2px solid #333;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+            border: 1px solid #eee;
+        }
+
+        .card h2 {
+            color: #d35400;
+            margin-top: 0;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #ff9f43;
+        }
+
+        .feature-box h3 {
+            color: #d35400;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <div id="ganesh-container">
+            <img src="ganesh_with_glasses.svg" alt="Cute Ganesh ji with glasses" id="ganesh-ji">
+        </div>
+        <h1 class="site-title">GANNU ACADEMY</h1>
+    </div>
+
+    <div class="nav-menu">
+        <a href="home.html" class="active">Home</a>
+        <a href="index.html">MCQ Quiz</a>
+        <a href="library.html">Library</a>
+    </div>
+
+    <div class="card">
+        <h2>Welcome to GANNU ACADEMY</h2>
+        <p>Gannu Academy is your ultimate learning companion for competitive exams and academic excellence. We provide comprehensive MCQ practice, a rich library of study materials, and interactive learning tools.</p>
+    </div>
+
+    <div class="card">
+        <h2>Why Choose Us?</h2>
+        <div class="features">
+            <div class="feature-box">
+                <h3>📚 Comprehensive Content</h3>
+                <p>Access a wide range of subjects and chapters with carefully curated MCQs.</p>
+            </div>
+            <div class="feature-box">
+                <h3>⚡ Instant Feedback</h3>
+                <p>Get immediate results and learn from your mistakes with detailed explanations.</p>
+            </div>
+            <div class="feature-box">
+                <h3>📖 Rich Library</h3>
+                <p>Explore our extensive collection of study materials and resources.</p>
+            </div>
+            <div class="feature-box">
+                <h3>🎯 Exam Ready</h3>
+                <p>Prepare effectively with practice tests designed to match exam patterns.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Getting Started</h2>
+        <ol>
+            <li>Navigate to the <strong>MCQ Quiz</strong> section</li>
+            <li>Select your class, subject, and chapter</li>
+            <li>Answer the questions and track your performance</li>
+            <li>Visit the <strong>Library</strong> for additional resources</li>
+        </ol>
+    </div>
+
+</body>
+</html>
