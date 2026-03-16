@@ -54,6 +54,41 @@
             text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
 
+        /* Navigation Menu Styles */
+        .nav-menu {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border: 1px solid #eee;
+        }
+
+        .nav-menu a {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 12px 25px;
+            background-color: #ff9f43;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 1em;
+        }
+
+        .nav-menu a:hover {
+            background-color: #d35400;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .nav-menu a.active {
+            background-color: #d35400;
+            border: 2px solid #333;
+        }
+
         .card {
             background: white;
             padding: 25px;
@@ -133,6 +168,13 @@
             <img src="ganesh_with_glasses.svg" alt="Cute Ganesh ji with glasses" id="ganesh-ji">
         </div>
         <h1 class="site-title">GANNU ACADEMY</h1>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu">
+        <a href="home.html">Home</a>
+        <a href="index.html" class="active">MCQ Quiz</a>
+        <a href="library.html">Library</a>
     </div>
     
     <div class="card">
