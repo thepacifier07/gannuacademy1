@@ -1,0 +1,663 @@
+{
+  "subject": "ENGLISH",
+  "class": "XI",
+  "chapter": "THE PRICE OF POLLUTION",
+  "author": "Susan Berfield",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Who is the author of “The Price of Pollution”?",
+      "options": ["Anil Agrawal", "Susan Berfield", "Harry Dimitriou", "Ranjan Bose"],
+      "answer": "B"
+    },
+    {
+      "id": 2,
+      "question": "What medical condition does nine-year-old Wong Ka Nang have?",
+      "options": ["Heart disease", "Diabetes", "Asthma", "Bronchitis"],
+      "answer": "C"
+    },
+    {
+      "id": 3,
+      "question": "Why did Wong Ka Nang miss school on January 3?",
+      "options": ["The school was closed for a holiday", "The air was too unhealthy for him to breathe", "He was traveling to another city", "He was hospitalized for a different reason"],
+      "answer": "B"
+    },
+    {
+      "id": 4,
+      "question": "How long before the January 3 alert had Hong Kong introduced a pollution index?",
+      "options": ["Three months", "Seven months", "One year", "Two years"],
+      "answer": "B"
+    },
+    {
+      "id": 5,
+      "question": "Which group was specifically advised to stay indoors during the alert?",
+      "options": ["All residents of Hong Kong", "Schoolchildren and teachers", "Those with heart or respiratory problems", "Commercial vehicle drivers"],
+      "answer": "C"
+    },
+    {
+      "id": 6,
+      "question": "What is identified as the main cause of “foul air” in Hong Kong?",
+      "options": ["Industrial waste", "Motor vehicles", "Smoking in public", "Construction dust"],
+      "answer": "B"
+    },
+    {
+      "id": 7,
+      "question": "Emissions from diesel vehicles account for what percentage of respirable suspended particulates in Hong Kong?",
+      "options": ["52%", "75%", "98%", "64%"],
+      "answer": "C"
+    },
+    {
+      "id": 8,
+      "question": "Which are the “worst offenders” regarding pollution in Hong Kong?",
+      "options": ["Private luxury cars", "Electric trains and ferries", "Taxis, mini-buses, and trucks", "Bicycles and rickshaws"],
+      "answer": "C"
+    },
+    {
+      "id": 9,
+      "question": "What happened in December 1995 that “galled” many people?",
+      "options": ["A massive fuel tax was introduced", "Legislators rejected a proposal for cleaner vehicles", "The pollution index was discontinued", "Delhi was declared more polluted than Hong Kong"],
+      "answer": "B"
+    },
+    {
+      "id": 10,
+      "question": "Who persuaded legislators to reject the government proposal?",
+      "options": ["The transport lobby", "Environmental activists", "The medical board", "School unions"],
+      "answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "Harry Dimitriou is a professor of:",
+      "options": ["Environmental Science", "Transport and urban policy", "Public Health", "Economics"],
+      "answer": "B"
+    },
+    {
+      "id": 12,
+      "question": "According to Dimitriou, Hong Kong’s leaders have “pretended” that:",
+      "options": ["Development is not happening", "Environmental consequences of development are insignificant", "Pollution is only caused by other countries", "Technology will fix everything immediately"],
+      "answer": "B"
+    },
+    {
+      "id": 13,
+      "question": "Which two Asian cities are described as “bright exceptions”?",
+      "options": ["Mumbai and Calcutta", "Tokyo and Singapore", "New Delhi and Beijing", "Bangkok and Jakarta"],
+      "answer": "B"
+    },
+    {
+      "id": 14,
+      "question": "What “dubious distinction” does New Delhi hold?",
+      "options": ["World’s largest capital", "World’s fourth most polluted city", "City with the most diesel cars", "Cleanest city in India"],
+      "answer": "B"
+    },
+    {
+      "id": 15,
+      "question": "By what percentage is vehicular pollution in New Delhi expected to rise by 2000?",
+      "options": ["10%", "20%", "50%", "75%"],
+      "answer": "B"
+    },
+    {
+      "id": 16,
+      "question": "Why is New Delhi’s air especially awful during winter?",
+      "options": ["People drive more", "Cold air stays put, trapping pollutants", "No wind blows smoke away", "Heating systems use coal"],
+      "answer": "B"
+    },
+    {
+      "id": 17,
+      "question": "What happens to pollutants when the air is warm?",
+      "options": ["They dissolve", "Warm air rises, taking pollutants with it", "They are absorbed by soil", "They become harmless"],
+      "answer": "B"
+    },
+    {
+      "id": 18,
+      "question": "The mixture of smoke and fog is called:",
+      "options": ["Smist", "Smog", "Foke", "Haze"],
+      "answer": "B"
+    },
+    {
+      "id": 19,
+      "question": "Why are air quality standards hardly met in Asian cities?",
+      "options": ["Standards are too strict", "Regulations are not enforced", "No measuring technology", "Weather conditions prevent it"],
+      "answer": "B"
+    },
+    {
+      "id": 20,
+      "question": "The most common urban illnesses are:",
+      "options": ["Digestive diseases", "Acute respiratory diseases", "Skin allergies", "Vision problems"],
+      "answer": "B"
+    },
+    {
+      "id": 21,
+      "question": "Road transport accounts for what percentage of pollution in Beijing?",
+      "options": ["52%", "64%", "75%", "98%"],
+      "answer": "C"
+    },
+    {
+      "id": 22,
+      "question": "Road transport accounts for what percentage of pollution in Mumbai?",
+      "options": ["52%", "64%", "75%", "98%"],
+      "answer": "A"
+    },
+    {
+      "id": 23,
+      "question": "By how much did the number of cars and jeeps in Delhi increase in 1994–95?",
+      "options": ["10%", "20%", "5%", "50%"],
+      "answer": "B"
+    },
+    {
+      "id": 24,
+      "question": "The increase of vehicles in Delhi is how many times the Asian average?",
+      "options": ["Triple", "Double", "Half", "Equal"],
+      "answer": "B"
+    },
+    {
+      "id": 25,
+      "question": "Which vehicles are the “biggest offenders” in Indian cities?",
+      "options": ["Diesel buses", "Two- and three-wheelers", "Private SUVs", "Delivery trucks"],
+      "answer": "B"
+    },
+    {
+      "id": 26,
+      "question": "What type of engine do two- and three-wheelers use?",
+      "options": ["Four-stroke", "Two-stroke", "Diesel", "Electric"],
+      "answer": "B"
+    },
+    {
+      "id": 27,
+      "question": "Why are two-stroke engines highly polluting?",
+      "options": ["Use too much oil", "Incomplete burning releases hydrocarbons", "Too noisy", "Cannot use lead-free petrol"],
+      "answer": "B"
+    },
+    {
+      "id": 28,
+      "question": "Two-wheelers make up what percentage of traffic in Delhi?",
+      "options": ["44%", "69%", "20%", "75%"],
+      "answer": "B"
+    },
+    {
+      "id": 29,
+      "question": "Two-wheelers make up what percentage of traffic in Calcutta?",
+      "options": ["69%", "44%", "20%", "52%"],
+      "answer": "B"
+    },
+    {
+      "id": 30,
+      "question": "Increase of two-wheelers in the last decade:",
+      "options": ["Double", "Triple", "Five-and-a-half times", "Ten times"],
+      "answer": "C"
+    },
+    {
+      "id": 31,
+      "question": "Anil Agrawal is Director of:",
+      "options": ["TERI", "EPD", "CSE", "WHO"],
+      "answer": "C"
+    },
+    {
+      "id": 32,
+      "question": "Pollution problem is due to bad technology, poor fuel, and:",
+      "options": ["Population", "Poor traffic planning", "Rain", "Taxes"],
+      "answer": "B"
+    },
+    {
+      "id": 33,
+      "question": "What did the CSE study reveal about eco-friendly petrol?",
+      "options": ["Cheaper", "High benzene content", "Better engines", "Imported"],
+      "answer": "B"
+    },
+    {
+      "id": 34,
+      "question": "Benzene is more toxic than:",
+      "options": ["Carbon monoxide", "Lead", "Sulfur", "Nitrogen"],
+      "answer": "B"
+    },
+    {
+      "id": 35,
+      "question": "What can reduce emissions by 20%?",
+      "options": ["New cars", "Proper engine maintenance", "Day driving", "Less AC use"],
+      "answer": "B"
+    },
+    {
+      "id": 36,
+      "question": "“Choking on its own economic success” means:",
+      "options": ["Eating more", "Pollution due to growth", "Economic failure", "Rich-only growth"],
+      "answer": "B"
+    },
+    {
+      "id": 37,
+      "question": "“Fantasy world” refers to:",
+      "options": ["Movies", "Ignoring environmental costs", "Beauty", "No cars"],
+      "answer": "B"
+    },
+    {
+      "id": 38,
+      "question": "Respirable suspended particulates are:",
+      "options": ["Trash", "Breathable particles", "Liquids", "Fuel"],
+      "answer": "B"
+    },
+    {
+      "id": 39,
+      "question": "The “price” people pay is:",
+      "options": ["Money", "Time", "Health and lives", "Taxes"],
+      "answer": "C"
+    },
+    {
+      "id": 40,
+      "question": "Earlier, “polluted” referred to:",
+      "options": ["Air", "Water", "Social contact", "Noise"],
+      "answer": "C"
+    },
+    {
+      "id": 41,
+      "question": "Main message of paragraph 10:",
+      "options": ["Pollution is permanent", "Solutions are not difficult", "Only government can help", "Ban petrol"],
+      "answer": "B"
+    },
+    {
+      "id": 42,
+      "question": "According to Ranjan Bose, pollution trends in Delhi are:",
+      "options": ["Falling", "Stable", "Rising", "Solved"],
+      "answer": "C"
+    },
+    {
+      "id": 43,
+      "question": "Which city has 64% pollution from road transport?",
+      "options": ["Beijing", "Mumbai", "Delhi", "Hong Kong"],
+      "answer": "C"
+    },
+    {
+      "id": 44,
+      "question": "“Deteriorate” means:",
+      "options": ["Improve", "Stay same", "Get worse", "Smell"],
+      "answer": "C"
+    },
+    {
+      "id": 45,
+      "question": "A “lobby” is:",
+      "options": ["Entrance", "Pressure group", "Building", "Union"],
+      "answer": "B"
+    },
+    {
+      "id": 46,
+      "question": "Tokyo and Singapore are described as:",
+      "options": ["Warnings", "Bright exceptions", "Dubious", "Fantasy"],
+      "answer": "B"
+    },
+    {
+      "id": 47,
+      "question": "A “pollutant” is:",
+      "options": ["Cleaner", "Pollution-causing substance", "Person", "Tool"],
+      "answer": "B"
+    },
+    {
+      "id": 48,
+      "question": "“Galled” means:",
+      "options": ["Pleased", "Confused", "Angered", "Excited"],
+      "answer": "C"
+    },
+    {
+      "id": 49,
+      "question": "Pollutants can cause:",
+      "options": ["Immunity", "Premature death and cancer", "Growth", "Speed"],
+      "answer": "B"
+    },
+    {
+      "id": 50,
+      "question": "Plural of fungus:",
+      "options": ["Funguses", "Fungi", "Fungie", "Fungas"],
+      "answer": "B"
+    },
+    {
+      "id": 51,
+      "question": "Vehicular technology means:",
+      "options": ["Speed", "Quality of vehicles", "Tires", "Computers"],
+      "answer": "B"
+    },
+    {
+      "id": 52,
+      "question": "Wong Ka Nang’s absence highlights:",
+      "options": ["Fame", "Vulnerable populations", "Index invention", "Migration"],
+      "answer": "B"
+    },
+    {
+      "id": 53,
+      "question": "An “index” is:",
+      "options": ["Name list", "Measurement system", "Finger", "Car"],
+      "answer": "B"
+    },
+    {
+      "id": 54,
+      "question": "Carcinogen means:",
+      "options": ["Causes cough", "Causes cancer", "Cleans engines", "Reduces lead"],
+      "answer": "B"
+    },
+    {
+      "id": 55,
+      "question": "Pollutants are trapped in Delhi because:",
+      "options": ["Buildings", "Cold air stays put", "Humidity", "Valley"],
+      "answer": "B"
+    },
+    {
+      "id": 56,
+      "question": "Pathogenic means:",
+      "options": ["Following path", "Disease-causing", "Healing", "Fast"],
+      "answer": "B"
+    },
+    {
+      "id": 57,
+      "question": "Transport lobby influenced:",
+      "options": ["Doctors", "Children", "Legislators", "Professors"],
+      "answer": "C"
+    },
+    {
+      "id": 58,
+      "question": "Highly polluting engine:",
+      "options": ["Jet", "Two-stroke", "Four-stroke", "Steam"],
+      "answer": "B"
+    },
+    {
+      "id": 59,
+      "question": "Dubious distinction of New Delhi:",
+      "options": ["Cleanest", "4th most polluted", "Most holidays", "Best lobby"],
+      "answer": "B"
+    },
+    {
+      "id": 60,
+      "question": "Toxic means:",
+      "options": ["Bitter", "Bright", "Poisonous", "Rare"],
+      "answer": "C"
+    },
+    {
+      "id": 61,
+      "question": "Where do you wait for a train?",
+      "options": ["Railway stop", "Railway stand", "Railway station", "Railway park"],
+      "answer": "C"
+    },
+    {
+      "id": 62,
+      "question": "Where do you wait for a bus?",
+      "options": ["Bus station", "Bus stop", "Bus stand", "Bus park"],
+      "answer": "B"
+    },
+    {
+      "id": 63,
+      "question": "Where do you wait for a taxi?",
+      "options": ["Taxi stop", "Taxi station", "Taxi stand", "Taxi zone"],
+      "answer": "C"
+    },
+    {
+      "id": 64,
+      "question": "Collocation means:",
+      "options": ["Same meaning", "Words that go together", "Same spelling", "Different languages"],
+      "answer": "B"
+    },
+    {
+      "id": 65,
+      "question": "Adjective with “schoolboy”:",
+      "options": ["Naughty", "Punctual", "Clever", "Lazy"],
+      "answer": "A"
+    },
+    {
+      "id": 66,
+      "question": "Adjective with “bride”:",
+      "options": ["New", "Sweet", "Beautiful", "Blushing"],
+      "answer": "D"
+    },
+    {
+      "id": 67,
+      "question": "Adjective with “sky”:",
+      "options": ["Blue", "Open", "Wide", "Vast"],
+      "answer": "A"
+    },
+    {
+      "id": 68,
+      "question": "Adjective with “tiger”:",
+      "options": ["Majestic", "Fierce", "Hungry", "Huge"],
+      "answer": "B"
+    },
+    {
+      "id": 69,
+      "question": "Adjective with “mountain”:",
+      "options": ["High", "Clean", "Tall", "Rugged"],
+      "answer": "A"
+    },
+    {
+      "id": 70,
+      "question": "A busy ____:",
+      "options": ["City", "Person", "Street", "Market"],
+      "answer": "C"
+    },
+    {
+      "id": 71,
+      "question": "The opening ____:",
+      "options": ["Match", "Scene", "Day", "Ceremony"],
+      "answer": "C"
+    },
+    {
+      "id": 72,
+      "question": "The worst ____:",
+      "options": ["Person", "Offender", "Place", "Weather"],
+      "answer": "B"
+    },
+    {
+      "id": 73,
+      "question": "A fantasy ____:",
+      "options": ["Story", "Dream", "World", "Land"],
+      "answer": "C"
+    },
+    {
+      "id": 74,
+      "question": "Dubious ____:",
+      "options": ["Distinction", "Story", "Character", "Record"],
+      "answer": "A"
+    },
+    {
+      "id": 75,
+      "question": "Smog is:",
+      "options": ["Fog & rain", "Smoke & fog", "Dust & wind", "Gas & steam"],
+      "answer": "B"
+    },
+    {
+      "id": 76,
+      "question": "Emission means:",
+      "options": ["Letter", "Harmful gases", "Sound", "Buying cars"],
+      "answer": "B"
+    },
+    {
+      "id": 77,
+      "question": "Respirable relates to:",
+      "options": ["Eating", "Breathing", "Seeing", "Hearing"],
+      "answer": "B"
+    },
+    {
+      "id": 78,
+      "question": "“Stays put” means:",
+      "options": ["Moves fast", "Remains", "Disappears", "Warms"],
+      "answer": "B"
+    },
+    {
+      "id": 79,
+      "question": "Premature death means:",
+      "options": ["Accident", "Old age", "Early death", "Natural"],
+      "answer": "C"
+    },
+    {
+      "id": 80,
+      "question": "Two-stroke engines burn fuel:",
+      "options": ["Perfectly", "Incompletely", "Electrically", "Without smoke"],
+      "answer": "B"
+    },
+    {
+      "id": 81,
+      "question": "Startling fact means:",
+      "options": ["Boring", "Shocking", "Known", "False"],
+      "answer": "B"
+    },
+    {
+      "id": 82,
+      "question": "Engine tuning is:",
+      "options": ["Painting", "Adjusting engine", "Changing tires", "Cleaning seats"],
+      "answer": "B"
+    },
+    {
+      "id": 83,
+      "question": "Pollution index measures:",
+      "options": ["Vehicles", "Pollution levels", "Tax", "Weather"],
+      "answer": "B"
+    },
+    {
+      "id": 84,
+      "question": "Foul air means:",
+      "options": ["Fresh", "Dirty", "Cold", "High"],
+      "answer": "B"
+    },
+    {
+      "id": 85,
+      "question": "Deteriorate : improve :: dubious :",
+      "options": ["Doubtful", "Certain", "Bad", "Famous"],
+      "answer": "B"
+    },
+    {
+      "id": 86,
+      "question": "Respiratory relates to:",
+      "options": ["Digestive", "Lungs", "Nervous", "Blood"],
+      "answer": "B"
+    },
+    {
+      "id": 87,
+      "question": "Hydrocarbons are:",
+      "options": ["Nutrients", "Pollutants", "Engine parts", "Roads"],
+      "answer": "B"
+    },
+    {
+      "id": 88,
+      "question": "Concentrations mean:",
+      "options": ["Focus", "Amounts", "Crowds", "Directions"],
+      "answer": "B"
+    },
+    {
+      "id": 89,
+      "question": "Norm means:",
+      "options": ["Name", "Standard", "Vehicle", "City"],
+      "answer": "B"
+    },
+    {
+      "id": 90,
+      "question": "Lingers means:",
+      "options": ["Moves fast", "Stays long", "Ends", "Starts"],
+      "answer": "B"
+    },
+    {
+      "id": 91,
+      "question": "Odd one out:",
+      "options": ["Taxis", "Mini-buses", "Bicycles", "Trucks"],
+      "answer": "C"
+    },
+    {
+      "id": 92,
+      "question": "Adjective with doctor:",
+      "options": ["Hard-working", "Busy", "Intelligent", "All"],
+      "answer": "D"
+    },
+    {
+      "id": 93,
+      "question": "Adjective with girl:",
+      "options": ["Small", "Pretty", "Tiny", "All"],
+      "answer": "D"
+    },
+    {
+      "id": 94,
+      "question": "Acute means:",
+      "options": ["Small", "Severe", "Long-term", "Pleasant"],
+      "answer": "B"
+    },
+    {
+      "id": 95,
+      "question": "“Choking smog” is:",
+      "options": ["Collocation", "Rhyme", "Glossary", "Index"],
+      "answer": "A"
+    },
+    {
+      "id": 96,
+      "question": "Lead-free petrol is marketed as:",
+      "options": ["Toxic", "Eco-friendly", "Expensive", "Dirty"],
+      "answer": "B"
+    },
+    {
+      "id": 97,
+      "question": "Legislators are people who:",
+      "options": ["Drive taxis", "Make laws", "Teach", "Research"],
+      "answer": "B"
+    },
+    {
+      "id": 98,
+      "question": "Commercial operators are:",
+      "options": ["Students", "Vehicle businesses", "Doctors", "Tourists"],
+      "answer": "B"
+    },
+    {
+      "id": 99,
+      "question": "Urban policy relates to:",
+      "options": ["Farming", "City planning", "Space", "Animals"],
+      "answer": "B"
+    },
+    {
+      "id": 100,
+      "question": "Exception means:",
+      "options": ["Rule follower", "Not following rule", "Pollution", "City"],
+      "answer": "B"
+    },
+    {
+      "id": 101,
+      "question": "Does the text say pollution is only a Hong Kong problem?",
+      "options": ["Yes", "No"],
+      "answer": "B"
+    },
+    {
+      "id": 102,
+      "question": "The “great pity” is that:",
+      "options": ["Cars are costly", "Hong Kong isn’t setting an example"],
+      "answer": "B"
+    },
+    {
+      "id": 103,
+      "question": "Is eco-friendly petrol safe in India?",
+      "options": ["Yes", "No"],
+      "answer": "B"
+    },
+    {
+      "id": 104,
+      "question": "Two-wheelers in Delhi make up:",
+      "options": ["44%", "69%"],
+      "answer": "B"
+    },
+    {
+      "id": 105,
+      "question": "Increase of two-wheelers happened:",
+      "options": ["Last year", "Last decade"],
+      "answer": "B"
+    },
+    {
+      "id": 106,
+      "question": "Ranjan Bose is:",
+      "options": ["Taxi driver", "Senior researcher at TERI"],
+      "answer": "B"
+    },
+    {
+      "id": 107,
+      "question": "Cold air in winter:",
+      "options": ["Rises", "Stays put"],
+      "answer": "B"
+    },
+    {
+      "id": 108,
+      "question": "Asian air standards are:",
+      "options": ["Higher", "Lower than international norms"],
+      "answer": "B"
+    },
+    {
+      "id": 109,
+      "question": "20% emission reduction comes from:",
+      "options": ["No traffic", "Engine maintenance"],
+      "answer": "B"
+    },
+    {
+      "id": 110,
+      "question": "Is benzene mor
